@@ -16,14 +16,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J15-Mo-NOf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J15-Mo-NOf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="160" id="tr3-Yo-Ddc" customClass="TripTableViewCell" customModule="Itinerary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tr3-Yo-Ddc" id="4Hx-Tz-yMr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4V-UV-dla">
+                                                    <rect key="frame" x="5" y="5" width="404" height="155"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUT-Q1-tJN">
+                                                            <rect key="frame" x="8" y="48" width="358" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="t4V-UV-dla" firstAttribute="leading" secondItem="4Hx-Tz-yMr" secondAttribute="leading" constant="5" id="2mp-6F-YCn"/>
+                                                <constraint firstItem="t4V-UV-dla" firstAttribute="top" secondItem="4Hx-Tz-yMr" secondAttribute="top" constant="5" id="VJM-Hd-ckd"/>
+                                                <constraint firstAttribute="bottom" secondItem="t4V-UV-dla" secondAttribute="bottom" id="bBn-Fw-2t0"/>
+                                                <constraint firstAttribute="trailing" secondItem="t4V-UV-dla" secondAttribute="trailing" constant="5" id="qyv-NZ-jGA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cardView" destination="t4V-UV-dla" id="fBN-y8-TYr"/>
+                                            <outlet property="titleLable" destination="OUT-Q1-tJN" id="iFy-wH-n7M"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G7n-0B-dso"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="J15-Mo-NOf" secondAttribute="bottom" id="5jq-Ub-f9M"/>
+                            <constraint firstItem="J15-Mo-NOf" firstAttribute="top" secondItem="Nm7-HM-Jiq" secondAttribute="top" id="8xh-2Q-wde"/>
+                            <constraint firstItem="J15-Mo-NOf" firstAttribute="leading" secondItem="G7n-0B-dso" secondAttribute="leading" id="N0E-pZ-fEx"/>
+                            <constraint firstItem="J15-Mo-NOf" firstAttribute="trailing" secondItem="G7n-0B-dso" secondAttribute="trailing" id="vr4-z2-Zfm"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="J15-Mo-NOf" id="iFR-DR-2yr"/>

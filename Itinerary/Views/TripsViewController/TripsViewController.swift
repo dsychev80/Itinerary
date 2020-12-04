@@ -15,13 +15,18 @@ class TripsViewController: UIViewController {
         super.viewDidLoad()
         
         self.tableView.dataSource = self
+        self.tableView.delegate = self 
         
         TripFunctions.readTrips { [weak self] in
             self?.tableView.reloadData()
         }
+        
+        tableView.backgroundColor = .clear
+        view.backgroundColor = Theme.background
     }
 }
 
+// MARK: - Data Source
 extension TripsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Data.tripModels.count
@@ -29,13 +34,15 @@ extension TripsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let dataTrip = Data.tripModels[indexPath.row]
-        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        }
-        cell?.textLabel?.text = dataTrip.title
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TripTableViewCell
+        cell.setup(with: dataTrip)
+        return cell
     }
-    
-    
+}
+
+// MARK: - Delegate
+extension TripsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 160
+    }
 }
