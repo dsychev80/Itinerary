@@ -55,6 +55,11 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6p-Oa-mea">
+                                <rect key="frame" x="338" y="806" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="FloatingActionButtonPlus"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G7n-0B-dso"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,6 +71,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="x6p-Oa-mea" id="CAE-Q0-KpB"/>
                         <outlet property="tableView" destination="J15-Mo-NOf" id="iFR-DR-2yr"/>
                     </connections>
                 </viewController>
@@ -75,6 +81,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FloatingActionButtonPlus" width="56" height="56"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

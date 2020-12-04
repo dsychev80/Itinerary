@@ -21,6 +21,7 @@
 		8466A9372579E8BD00918A8C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466A9362579E8BD00918A8C /* Theme.swift */; };
 		8466A93E2579EA1C00918A8C /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8466A93A2579EA0500918A8C /* FugazOne-Regular.ttf */; };
 		8466A9412579EBE500918A8C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8466A9402579EBE500918A8C /* Colors.xcassets */; };
+		8466A944257AFDB300918A8C /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466A943257AFDB200918A8C /* UIButtonExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		8466A9362579E8BD00918A8C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		8466A93A2579EA0500918A8C /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
 		8466A9402579EBE500918A8C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8466A943257AFDB200918A8C /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				8466A9312579843C00918A8C /* UIViewExtensions.swift */,
+				8466A943257AFDB200918A8C /* UIButtonExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				8466A92D25796B2800918A8C /* TripTableViewCell.swift in Sources */,
 				8466A9322579843C00918A8C /* UIViewExtensions.swift in Sources */,
 				8466A92025794AE400918A8C /* Data.swift in Sources */,
+				8466A944257AFDB300918A8C /* UIButtonExtensions.swift in Sources */,
 				8466A90325783C6200918A8C /* SceneDelegate.swift in Sources */,
 				8466A92625795F8C00918A8C /* TripsViewController.swift in Sources */,
 				8466A91D2579481F00918A8C /* TripFunctions.swift in Sources */,
