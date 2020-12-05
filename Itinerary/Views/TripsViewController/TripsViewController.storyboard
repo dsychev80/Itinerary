@@ -60,7 +60,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="FloatingActionButtonPlus"/>
                                 <connections>
-                                    <segue destination="uzQ-4u-U6A" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="EcG-rx-uPd"/>
+                                    <segue destination="uzQ-4u-U6A" kind="presentation" identifier="toAddTripSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="EcG-rx-uPd"/>
                                 </connections>
                             </button>
                         </subviews>

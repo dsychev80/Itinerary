@@ -27,6 +27,18 @@ class TripsViewController: UIViewController {
         
         addButton.floatActionButtonStyle()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toAddTripSegue" {
+            guard let destinationVC = segue.destination as? AddTripViewController else {
+                return
+            }
+            destinationVC.doneSaving = { [weak self] in
+                guard let self = self else { return }
+                self.tableView.reloadData()
+            }
+        }
+    }
 }
 
 // MARK: - Data Source
