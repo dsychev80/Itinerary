@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "3caba974-854d-4cd7-8f79-a4de75588ddd.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}
