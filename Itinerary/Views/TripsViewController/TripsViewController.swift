@@ -23,7 +23,7 @@ class TripsViewController: UIViewController {
         }
         
         tableView.backgroundColor = .clear
-        view.backgroundColor = Theme.background
+        view.backgroundColor = Theme.backgroundColor
         
         addButton.floatActionButtonStyle()
     }
