@@ -60,43 +60,41 @@ class AddTripViewController: UIViewController {
     }
     
     @IBAction func addImage(_ sender: UIButton) {
-        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
-            PHPhotoLibrary.requestAuthorization { [weak self] (status) in
-                switch status {
-                case .authorized:
-                    self?.presentPhotoPickerController()
-                case .notDetermined:
-                    self?.presentPhotoPickerController()
-                case .restricted:
-                    DispatchQueue.main.async {
-                        let alert = UIAlertController(title: "Photo Library Restricted", message: "Photo Library access is restricted and cannot be access.", preferredStyle: .alert)
-                        let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                        alert.addAction(okButton)
-                        
-                        self?.present(alert, animated: true, completion: nil)
-                    }
-                case .denied:
-                    DispatchQueue.main.async {
-                        let alert = UIAlertController(title: "Photo Library Access Denied", message: "Photo Library access was previously denied. Please update your Settings if you wish to change this.", preferredStyle: .alert)
-                        let goToSettings = UIAlertAction(title: "Go to Settings", style: .default, handler: { (action) in
-                            DispatchQueue.main.async {
-                                if let url = URL(string: UIApplication.openSettingsURLString) {
-                                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
-                                }
-                            }
-                        })
-                        let cancelButton = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        PHPhotoLibrary.requestAuthorization { [weak self] (status) in
+            switch status {
+            case .authorized:
+                self?.presentPhotoPickerController()
+            case .notDetermined:
+                self?.presentPhotoPickerController()
+            case .restricted:
+                DispatchQueue.main.async {
+                    let alert = UIAlertController(title: "Photo Library Restricted", message: "Photo Library access is restricted and cannot be access.", preferredStyle: .alert)
+                    let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                    alert.addAction(okButton)
                     
-                        alert.addAction(goToSettings)
-                        alert.addAction(cancelButton)
-                        
-                        self?.present(alert, animated: true, completion: nil)
-                    }
-                case .limited:
-                    break
-                @unknown default:
-                    break
+                    self?.present(alert, animated: true, completion: nil)
                 }
+            case .denied:
+                DispatchQueue.main.async {
+                    let alert = UIAlertController(title: "Photo Library Access Denied", message: "Photo Library access was previously denied. Please update your Settings if you wish to change this.", preferredStyle: .alert)
+                    let goToSettings = UIAlertAction(title: "Go to Settings", style: .default, handler: { (action) in
+                        DispatchQueue.main.async {
+                            if let url = URL(string: UIApplication.openSettingsURLString) {
+                                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                            }
+                        }
+                    })
+                    let cancelButton = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+                
+                    alert.addAction(goToSettings)
+                    alert.addAction(cancelButton)
+                    
+                    self?.present(alert, animated: true, completion: nil)
+                }
+            case .limited:
+                break
+            @unknown default:
+                break
             }
         }
     }
