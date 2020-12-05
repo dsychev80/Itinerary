@@ -12,6 +12,8 @@ class TripsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addButton: UIButton!
     
+    var tripIndexToEdit: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +35,7 @@ class TripsViewController: UIViewController {
             guard let destinationVC = segue.destination as? AddTripViewController else {
                 return
             }
+            destinationVC.tripIndexToEdit = self.tripIndexToEdit
             destinationVC.doneSaving = { [weak self] in
                 guard let self = self else { return }
                 self.tableView.reloadData()
@@ -81,5 +84,15 @@ extension TripsViewController: UITableViewDelegate {
         delete.image = #imageLiteral(resourceName: "delete")
         delete.backgroundColor = #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)
         return UISwipeActionsConfiguration(actions: [delete])
+    }
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let editAction = UIContextualAction(style: .normal, title: "Edit") { (action, view, actionPerform: @escaping (Bool) -> ()) in
+            self.tripIndexToEdit = indexPath.row
+            self.performSegue(withIdentifier: "toAddTripSegue", sender: nil)
+            actionPerform(true)
+        }
+        editAction.backgroundColor = .systemBlue 
+        return UISwipeActionsConfiguration(actions: [editAction])
     }
 }

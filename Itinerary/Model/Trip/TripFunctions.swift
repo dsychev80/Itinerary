@@ -5,7 +5,7 @@
 //  Created by Denis Sychev on 12/4/20.
 //
 
-import Foundation
+import UIKit
 
 class TripFunctions {
     static func createTrip(tripModel: TripModel) {
@@ -25,8 +25,8 @@ class TripFunctions {
         }
     }
     
-    static func updateTrip(tripModel: TripModel) {
-        
+    static func updateTrip(for index: Int, with title: String, image: UIImage? = nil) {
+        Data.tripModels[index] = TripModel(title: title, image: image)
     }
     
     static func deleteTrip(index: Int) {
