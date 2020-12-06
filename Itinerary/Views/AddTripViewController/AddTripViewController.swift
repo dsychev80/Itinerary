@@ -36,10 +36,15 @@ class AddTripViewController: UIViewController {
             let trip = Data.tripModels[index]
             textField.text = trip.title
             imageView.image = trip.image
+            titleLabel.text = "Edit trip"
         }
     }
 
+
     @IBAction func cancel(_ sender: UIButton) {
+        if tripIndexToEdit != nil {
+            tripIndexToEdit = nil
+        }
         dismiss(animated: true, completion: nil)
     }
     

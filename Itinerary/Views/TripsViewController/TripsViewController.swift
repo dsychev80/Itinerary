@@ -40,6 +40,7 @@ class TripsViewController: UIViewController {
                 guard let self = self else { return }
                 self.tableView.reloadData()
             }
+            tripIndexToEdit = nil
         }
     }
 }
