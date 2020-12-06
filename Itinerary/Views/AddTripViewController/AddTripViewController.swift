@@ -70,6 +70,7 @@ class AddTripViewController: UIViewController {
     fileprivate func presentPhotoPickerController() {
         DispatchQueue.main.async { [weak self] in
             let pickerController = UIImagePickerController()
+            pickerController.allowsEditing = true
             pickerController.delegate = self
             pickerController.sourceType = .photoLibrary
             self?.present(pickerController, animated: true, completion: nil)
@@ -137,8 +138,11 @@ class AddTripViewController: UIViewController {
 // MARK:- UIImagePickerControllerDelegate
 extension AddTripViewController: UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            self.imageView.image = image
+        
+        if let editedImage = info[.editedImage] as? UIImage {
+            self.imageView.image = editedImage
+        } else if let originalImage = info[.originalImage] as? UIImage {
+            self.imageView.image = originalImage
         }
         dismiss(animated: true, completion: nil)
     }
