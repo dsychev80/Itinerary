@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q46-Vb-zk2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Activities View Controller-->
+        <scene sceneID="LUI-da-E4z">
+            <objects>
+                <viewController id="q46-Vb-zk2" customClass="ActivitiesViewController" customModule="Itinerary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="311-yj-For">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aty-l3-erT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3X-SC-NB0">
+                                        <rect key="frame" x="114" y="76" width="186" height="48"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tho-Tc-Fef">
+                                        <rect key="frame" x="175" y="144" width="65" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="427-Lc-Uu6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="back:" destination="q46-Vb-zk2" eventType="touchUpInside" id="F7F-US-3yB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="Accent"/>
+                                <constraints>
+                                    <constraint firstItem="tho-Tc-Fef" firstAttribute="leading" secondItem="aty-l3-erT" secondAttribute="leading" constant="175" id="BLU-Nu-pZZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="tho-Tc-Fef" secondAttribute="bottom" constant="8" id="FY2-Xc-Gps"/>
+                                    <constraint firstItem="j3X-SC-NB0" firstAttribute="centerY" secondItem="aty-l3-erT" secondAttribute="centerY" id="ffB-TB-KcL"/>
+                                    <constraint firstAttribute="height" constant="200" id="oAP-xh-fbC"/>
+                                    <constraint firstAttribute="trailing" secondItem="tho-Tc-Fef" secondAttribute="trailing" constant="174" id="p9q-o6-TWc"/>
+                                    <constraint firstItem="j3X-SC-NB0" firstAttribute="centerX" secondItem="aty-l3-erT" secondAttribute="centerX" id="uGh-cu-LKo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="66n-6E-MUJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aty-l3-erT" firstAttribute="top" secondItem="311-yj-For" secondAttribute="top" id="Jyj-TH-TLX"/>
+                            <constraint firstItem="aty-l3-erT" firstAttribute="leading" secondItem="66n-6E-MUJ" secondAttribute="leading" id="dUN-xF-urm"/>
+                            <constraint firstItem="aty-l3-erT" firstAttribute="trailing" secondItem="66n-6E-MUJ" secondAttribute="trailing" id="ybC-Lf-X3U"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPZ-CK-Kl6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81.159420289855078" y="215.625"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="Tint"/>
+    <resources>
+        <namedColor name="Accent">
+            <color red="0.017565900459999999" green="0.1837550402" blue="0.1852507591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Tint">
+            <color red="0.98100882769999997" green="0.37667888399999999" blue="0.34559032319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
