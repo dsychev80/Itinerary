@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846505DC2581464C003A4713 /* ActivitiesHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846505DB2581464C003A4713 /* ActivitiesHeaderViewCell.swift */; };
+		846695D2257FFE2500F79274 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846695CC257FFB3500F79274 /* DayModel.swift */; };
+		846695D6257FFECA00F79274 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846695D5257FFECA00F79274 /* ActivityModel.swift */; };
+		846695DA257FFF3200F79274 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846695D9257FFF3200F79274 /* ActivityType.swift */; };
+		846695DD258020FF00F79274 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846695DC258020FF00F79274 /* MockData.swift */; };
 		8466A90125783C6200918A8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466A90025783C6200918A8C /* AppDelegate.swift */; };
 		8466A90325783C6200918A8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466A90225783C6200918A8C /* SceneDelegate.swift */; };
 		8466A90A25783C6600918A8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8466A90925783C6600918A8C /* Assets.xcassets */; };
@@ -31,6 +36,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		846505DB2581464C003A4713 /* ActivitiesHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesHeaderViewCell.swift; sourceTree = "<group>"; };
+		846695CC257FFB3500F79274 /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
+		846695D5257FFECA00F79274 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		846695D9257FFF3200F79274 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
+		846695DC258020FF00F79274 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		8466A8FD25783C6200918A8C /* Itinerary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Itinerary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8466A90025783C6200918A8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8466A90225783C6200918A8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +77,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846695CF257FFB9B00F79274 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				846695CC257FFB3500F79274 /* DayModel.swift */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		846695D4257FFE9E00F79274 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				846695D5257FFECA00F79274 /* ActivityModel.swift */,
+				846695D9257FFF3200F79274 /* ActivityType.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
 		8466A8F425783C6200918A8C = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				8466A91F25794AE400918A8C /* Data.swift */,
+				846695DC258020FF00F79274 /* MockData.swift */,
 				8466A917257947EC00918A8C /* Trip */,
+				846695CF257FFB9B00F79274 /* Day */,
+				846695D4257FFE9E00F79274 /* Activity */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				8466A965257F32F700918A8C /* ActivitiesViewController.storyboard */,
+				846505DB2581464C003A4713 /* ActivitiesHeaderViewCell.swift */,
 				8466A968257F330900918A8C /* ActivitiesViewController.swift */,
 			);
 			path = ActivitiesViewController;
@@ -264,11 +295,16 @@
 				8466A969257F330900918A8C /* ActivitiesViewController.swift in Sources */,
 				8466A9322579843C00918A8C /* UIViewExtensions.swift in Sources */,
 				8466A92025794AE400918A8C /* Data.swift in Sources */,
+				846695D2257FFE2500F79274 /* DayModel.swift in Sources */,
 				8466A950257B18C500918A8C /* PopupUIView.swift in Sources */,
 				8466A954257B1BDF00918A8C /* AppUIButton.swift in Sources */,
 				8466A944257AFDB300918A8C /* UIButtonExtensions.swift in Sources */,
 				8466A90325783C6200918A8C /* SceneDelegate.swift in Sources */,
+				846695DA257FFF3200F79274 /* ActivityType.swift in Sources */,
+				846505DC2581464C003A4713 /* ActivitiesHeaderViewCell.swift in Sources */,
 				8466A94B257B07F400918A8C /* AddTripViewController.swift in Sources */,
+				846695DD258020FF00F79274 /* MockData.swift in Sources */,
+				846695D6257FFECA00F79274 /* ActivityModel.swift in Sources */,
 				8466A92625795F8C00918A8C /* TripsViewController.swift in Sources */,
 				8466A91D2579481F00918A8C /* TripFunctions.swift in Sources */,
 				8466A9192579480E00918A8C /* TripModel.swift in Sources */,
