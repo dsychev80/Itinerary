@@ -3,13 +3,14 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Trips View Controller-->
+        <!--Trips-->
         <scene sceneID="WEy-5W-dA9">
             <objects>
                 <viewController id="a1s-DF-ysS" customClass="TripsViewController" customModule="Itinerary" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,7 +80,7 @@
                             <constraint firstItem="J15-Mo-NOf" firstAttribute="trailing" secondItem="G7n-0B-dso" secondAttribute="trailing" id="vr4-z2-Zfm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="txm-Ju-m5o"/>
+                    <navigationItem key="navigationItem" title="Trips" id="txm-Ju-m5o"/>
                     <connections>
                         <outlet property="addButton" destination="x6p-Oa-mea" id="CAE-Q0-KpB"/>
                         <outlet property="helpView" destination="aWu-I0-hh7" id="vjm-a7-znn"/>
@@ -155,9 +156,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="COg-Ke-t3y" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="moC-Ky-Ex8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="moC-Ky-Ex8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="Accent"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -169,10 +174,17 @@
             <point key="canvasLocation" x="115.94202898550725" y="80.357142857142847"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="Tint"/>
     <resources>
         <image name="FloatingActionButtonPlus" width="56" height="56"/>
         <image name="deleteSwipe" width="262" height="114"/>
         <image name="editSwipe" width="266" height="115"/>
+        <namedColor name="Accent">
+            <color red="0.015686274509803921" green="0.1803921568627451" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Tint">
+            <color red="0.98039215686274506" green="0.37647058823529411" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

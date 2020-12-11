@@ -14,12 +14,14 @@ class ActivitiesViewController: UIViewController {
     
     var tripID: String?
     var tripModel: TripModel?
+    var tripTitle: String = ""
     var headerHeight: CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.title = tripTitle
         
         tableView.dataSource = self
         tableView.delegate = self

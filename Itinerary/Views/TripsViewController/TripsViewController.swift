@@ -21,7 +21,7 @@ class TripsViewController: UIViewController {
         super.viewDidLoad()
         
         self.tableView.dataSource = self
-        self.tableView.delegate = self 
+        self.tableView.delegate = self
         
         TripFunctions.readTrips { [unowned self] in
             self.tableView.reloadData()
@@ -120,6 +120,7 @@ extension TripsViewController: UITableViewDelegate {
         let storyboard = UIStoryboard(name: String(describing: ActivitiesViewController.self), bundle: nil)
         guard let vc = storyboard.instantiateInitialViewController() as? ActivitiesViewController else { return }
         vc.tripID = trip.id
+        vc.tripTitle = trip.title
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
