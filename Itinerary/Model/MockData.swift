@@ -35,27 +35,27 @@ class MockData {
         
         switch sectionTitle {
         case "April 18":
-            activities.append(ActivityModel(title: "SLC", subtitle: "", activityType: .auto))
-            activities.append(ActivityModel(title: "LAX", subtitle: "", activityType: .auto))
+            activities.append(ActivityModel(title: "SLC", subtitle: "12:25 - 13:45", activityType: .flight))
+            activities.append(ActivityModel(title: "LAX", subtitle: "17:30 - 11:00", activityType: .flight))
         case "April 19":
-            activities.append(ActivityModel(title: "DPS", subtitle: "", activityType: .auto))
-            activities.append(ActivityModel(title: "Bintang Kuta Hotel Checkin", subtitle: "", activityType: .auto))
-            activities.append(ActivityModel(title: "Pick up rental", subtitle: "", activityType: .auto))
-            activities.append(ActivityModel(title: "Island Excursion", subtitle: "", activityType: .auto))
-            activities.append(ActivityModel(title: "Dinner", subtitle: "", activityType: .auto))
+            activities.append(ActivityModel(title: "DPS", subtitle: "11:30 - 13:00", activityType: .flight))
+            activities.append(ActivityModel(title: "Bintang Kuta Hotel Checkin", subtitle: "Confirmation: 23lkj4h", activityType: .hotel))
+            activities.append(ActivityModel(title: "Pick up rental", subtitle: "Confirmation: 8348993", activityType: .auto))
+            activities.append(ActivityModel(title: "Island Excursion", subtitle: "Touring the island", activityType: .excursion))
+            activities.append(ActivityModel(title: "Dinner", subtitle: "At Warung Sanur Segar", activityType: .food))
         case "April 20":
-            activities.append(ActivityModel(title: "Scuba Diving", subtitle: "", activityType: .auto))
-            activities.append(ActivityModel(title: "Dinner", subtitle: "", activityType: .auto))
+            activities.append(ActivityModel(title: "Scuba Diving", subtitle: "Cheking out the Reefs", activityType: .excursion))
+            activities.append(ActivityModel(title: "Dinner", subtitle: "At Malaika Secret Moksha", activityType: .food))
         case "April 21":
-            activities.append(ActivityModel(title: "Travel", subtitle: "", activityType: .auto))
+            activities.append(ActivityModel(title: "Travel", subtitle: "To Nusa Penida", activityType: .flight))
             activities.append(ActivityModel(title: "Volunteering", subtitle: "", activityType: .auto))
-            activities.append(ActivityModel(title: "Dinner", subtitle: "", activityType: .auto))
-            activities.append(ActivityModel(title: "Travel", subtitle: "", activityType: .auto))
+            activities.append(ActivityModel(title: "Dinner", subtitle: "At Djunga Bunga", activityType: .food))
+            activities.append(ActivityModel(title: "Travel", subtitle: "To Casamontra", activityType: .excursion))
         case "April 22":
-            activities.append(ActivityModel(title: "Hotel Checkout", subtitle: "", activityType: .auto))
-            activities.append(ActivityModel(title: "DPS", subtitle: "", activityType: .auto))
-            activities.append(ActivityModel(title: "LAX", subtitle: "", activityType: .auto))
-            activities.append(ActivityModel(title: "SLC", subtitle: "", activityType: .auto))
+            activities.append(ActivityModel(title: "Hotel Checkout", subtitle: "", activityType: .hotel))
+            activities.append(ActivityModel(title: "DPS", subtitle: "13:40 - 16:20", activityType: .flight))
+            activities.append(ActivityModel(title: "LAX", subtitle: "17:30 - 11:00", activityType: .flight))
+            activities.append(ActivityModel(title: "SLC", subtitle: "12:25 - 13:45", activityType: .flight))
         default: break
         }
 
