@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8456F16025845EE1005726A2 /* PXAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456F15F25845EE1005726A2 /* PXAlertController.swift */; };
 		846505DC2581464C003A4713 /* ActivitiesHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846505DB2581464C003A4713 /* ActivitiesHeaderViewCell.swift */; };
 		846505DF258162A2003A4713 /* ActivitieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846505DE258162A2003A4713 /* ActivitieTableViewCell.swift */; };
 		846505E22583237E003A4713 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846505E12583237E003A4713 /* UITableViewCellExtensions.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8456F15F25845EE1005726A2 /* PXAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXAlertController.swift; sourceTree = "<group>"; };
 		846505DB2581464C003A4713 /* ActivitiesHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesHeaderViewCell.swift; sourceTree = "<group>"; };
 		846505DE258162A2003A4713 /* ActivitieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitieTableViewCell.swift; sourceTree = "<group>"; };
 		846505E12583237E003A4713 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				8466A9312579843C00918A8C /* UIViewExtensions.swift */,
 				8466A943257AFDB200918A8C /* UIButtonExtensions.swift */,
 				846505E12583237E003A4713 /* UITableViewCellExtensions.swift */,
+				8456F15F25845EE1005726A2 /* PXAlertController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			files = (
 				8466A9372579E8BD00918A8C /* Theme.swift in Sources */,
 				8466A90125783C6200918A8C /* AppDelegate.swift in Sources */,
+				8456F16025845EE1005726A2 /* PXAlertController.swift in Sources */,
 				8466A92D25796B2800918A8C /* TripTableViewCell.swift in Sources */,
 				8466A969257F330900918A8C /* ActivitiesViewController.swift in Sources */,
 				8466A9322579843C00918A8C /* UIViewExtensions.swift in Sources */,

@@ -86,7 +86,7 @@
     <resources>
         <image name="photoCamera" width="512" height="512"/>
         <namedColor name="Tint">
-            <color red="0.98100882769999997" green="0.37667888399999999" blue="0.34559032319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98039215686274506" green="0.37647058823529411" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

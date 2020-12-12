@@ -11,6 +11,7 @@ class ActivitiesViewController: UIViewController {
 
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addButton: AppUIButton!
     
     var tripID: String?
     var tripModel: TripModel?
@@ -22,6 +23,7 @@ class ActivitiesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.title = tripTitle
+        self.addButton.floatActionButtonStyle()
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -45,6 +47,29 @@ class ActivitiesViewController: UIViewController {
     
     @IBAction func back(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func addAction(_ sender: UIButton) {
+        let alertController = PXAlertController(title: "Which would you like to add?", message: nil, preferredStyle: .actionSheet)
+        let addDayAction = UIAlertAction(title: "Day", style: .default, handler: handleAddDay)
+        let addActivitieAction = UIAlertAction(title: "Activity", style: .default) { (action) in
+            
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            
+        }
+        alertController.addAction(addDayAction)
+        alertController.addAction(addActivitieAction)
+        alertController.addAction(cancelAction)
+        
+        alertController.view.tintColor = Theme.tintColor 
+        
+        present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    func handleAddDay(action: UIAlertAction) {
+        
     }
 }
 
@@ -87,6 +112,7 @@ extension ActivitiesViewController: UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: ActivitiesHeaderViewCell.identifier) as! ActivitiesHeaderViewCell
         guard let data = tripModel?.dayModels[section] else { return nil }
         cell.setup(with: data)
+        
         return cell.contentView
     }
     

@@ -128,12 +128,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdK-cv-hcK" customClass="AppUIButton" customModule="Itinerary" customModuleProvider="target">
+                                <rect key="frame" x="338" y="801" width="56" height="56"/>
+                                <state key="normal" image="FloatingActionButtonPlus"/>
+                                <connections>
+                                    <action selector="addAction:" destination="q46-Vb-zk2" eventType="touchUpInside" id="CE4-Z3-zu3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="66n-6E-MUJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ldh-Ht-Qc5" firstAttribute="top" secondItem="66n-6E-MUJ" secondAttribute="top" id="2Pe-eA-fR3"/>
+                            <constraint firstItem="66n-6E-MUJ" firstAttribute="trailing" secondItem="jdK-cv-hcK" secondAttribute="trailing" constant="20" id="5cI-bp-6ey"/>
                             <constraint firstAttribute="bottom" secondItem="Ldh-Ht-Qc5" secondAttribute="bottom" id="FFT-2i-tQD"/>
                             <constraint firstAttribute="trailing" secondItem="Wft-7f-4Cb" secondAttribute="trailing" id="G7E-FQ-crX"/>
                             <constraint firstItem="Ldh-Ht-Qc5" firstAttribute="trailing" secondItem="66n-6E-MUJ" secondAttribute="trailing" id="Kef-M2-LTl"/>
@@ -141,9 +149,11 @@
                             <constraint firstItem="Ldh-Ht-Qc5" firstAttribute="leading" secondItem="66n-6E-MUJ" secondAttribute="leading" id="Z9X-dM-sXj"/>
                             <constraint firstItem="Wft-7f-4Cb" firstAttribute="leading" secondItem="311-yj-For" secondAttribute="leading" id="dCl-rw-jgm"/>
                             <constraint firstItem="Wft-7f-4Cb" firstAttribute="top" secondItem="311-yj-For" secondAttribute="top" id="idF-FO-OZl"/>
+                            <constraint firstItem="66n-6E-MUJ" firstAttribute="bottom" secondItem="jdK-cv-hcK" secondAttribute="bottom" constant="5" id="tDW-IF-c0R"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="jdK-cv-hcK" id="OKj-kH-rjD"/>
                         <outlet property="backgroundImageView" destination="Wft-7f-4Cb" id="uXZ-Qx-k2j"/>
                         <outlet property="tableView" destination="Ldh-Ht-Qc5" id="mVO-Tm-VOQ"/>
                     </connections>
@@ -155,6 +165,7 @@
     </scenes>
     <color key="tintColor" name="Tint"/>
     <resources>
+        <image name="FloatingActionButtonPlus" width="56" height="56"/>
         <namedColor name="Accent">
             <color red="0.015686274509803921" green="0.1803921568627451" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
