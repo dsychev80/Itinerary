@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8434EB3725885AAE003E9048 /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434EB3625885AAE003E9048 /* UIViewControllerExtention.swift */; };
 		8456F16025845EE1005726A2 /* PXAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456F15F25845EE1005726A2 /* PXAlertController.swift */; };
+		8456F16425846850005726A2 /* AddDayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8456F16325846850005726A2 /* AddDayViewController.storyboard */; };
+		8456F1672584687E005726A2 /* AddDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456F1662584687E005726A2 /* AddDayViewController.swift */; };
 		846505DC2581464C003A4713 /* ActivitiesHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846505DB2581464C003A4713 /* ActivitiesHeaderViewCell.swift */; };
 		846505DF258162A2003A4713 /* ActivitieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846505DE258162A2003A4713 /* ActivitieTableViewCell.swift */; };
 		846505E22583237E003A4713 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846505E12583237E003A4713 /* UITableViewCellExtensions.swift */; };
@@ -39,7 +42,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8434EB3625885AAE003E9048 /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
 		8456F15F25845EE1005726A2 /* PXAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXAlertController.swift; sourceTree = "<group>"; };
+		8456F16325846850005726A2 /* AddDayViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddDayViewController.storyboard; sourceTree = "<group>"; };
+		8456F1662584687E005726A2 /* AddDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDayViewController.swift; sourceTree = "<group>"; };
 		846505DB2581464C003A4713 /* ActivitiesHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesHeaderViewCell.swift; sourceTree = "<group>"; };
 		846505DE258162A2003A4713 /* ActivitieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitieTableViewCell.swift; sourceTree = "<group>"; };
 		846505E12583237E003A4713 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
@@ -83,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8456F162258467F1005726A2 /* AddDayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8456F16325846850005726A2 /* AddDayViewController.storyboard */,
+				8456F1662584687E005726A2 /* AddDayViewController.swift */,
+			);
+			path = AddDayViewController;
+			sourceTree = "<group>";
+		};
 		846695CF257FFB9B00F79274 /* Day */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +173,7 @@
 				8466A949257B079E00918A8C /* AddTripViewController */,
 				8466A92425795F2A00918A8C /* TripsViewController */,
 				8466A964257F32D800918A8C /* ActivitiesViewController */,
+				8456F162258467F1005726A2 /* AddDayViewController */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +195,7 @@
 				8466A943257AFDB200918A8C /* UIButtonExtensions.swift */,
 				846505E12583237E003A4713 /* UITableViewCellExtensions.swift */,
 				8456F15F25845EE1005726A2 /* PXAlertController.swift */,
+				8434EB3625885AAE003E9048 /* UIViewControllerExtention.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -285,6 +302,7 @@
 				8466A9412579EBE500918A8C /* Colors.xcassets in Resources */,
 				8466A90D25783C6600918A8C /* LaunchScreen.storyboard in Resources */,
 				8466A966257F32F700918A8C /* ActivitiesViewController.storyboard in Resources */,
+				8456F16425846850005726A2 /* AddDayViewController.storyboard in Resources */,
 				8466A92925795FB000918A8C /* TripsViewController.storyboard in Resources */,
 				8466A93E2579EA1C00918A8C /* FugazOne-Regular.ttf in Resources */,
 				8466A90A25783C6600918A8C /* Assets.xcassets in Resources */,
@@ -302,6 +320,8 @@
 				8466A90125783C6200918A8C /* AppDelegate.swift in Sources */,
 				8456F16025845EE1005726A2 /* PXAlertController.swift in Sources */,
 				8466A92D25796B2800918A8C /* TripTableViewCell.swift in Sources */,
+				8456F1672584687E005726A2 /* AddDayViewController.swift in Sources */,
+				8434EB3725885AAE003E9048 /* UIViewControllerExtention.swift in Sources */,
 				8466A969257F330900918A8C /* ActivitiesViewController.swift in Sources */,
 				8466A9322579843C00918A8C /* UIViewExtensions.swift in Sources */,
 				8466A92025794AE400918A8C /* Data.swift in Sources */,

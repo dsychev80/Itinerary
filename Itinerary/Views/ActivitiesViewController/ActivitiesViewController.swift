@@ -69,7 +69,8 @@ class ActivitiesViewController: UIViewController {
     }
     
     func handleAddDay(action: UIAlertAction) {
-        
+        let vc = AddDayViewController.getInstance() as! AddDayViewController
+        present(vc, animated: true, completion: nil)
     }
 }
 
