@@ -10,10 +10,10 @@ import Foundation
 struct DayModel {
     let id: String
     var title: String
-    var subtitle: String
+    var subtitle: String?
     var activityModels = [ActivityModel]()
     
-    init(title: String, subtitle: String, data: [ActivityModel]?) {
+    init(title: String, subtitle: String?, data: [ActivityModel]?) {
         self.id = UUID().uuidString
         self.title = title
         self.subtitle = subtitle
