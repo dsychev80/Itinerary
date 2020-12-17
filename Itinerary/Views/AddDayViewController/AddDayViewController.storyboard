@@ -17,49 +17,71 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWb-2o-HcO" customClass="PopupUIView" customModule="Itinerary" customModuleProvider="target">
-                                <rect key="frame" x="16" y="50" width="382" height="180"/>
+                                <rect key="frame" x="16" y="50" width="382" height="290"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Day:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKQ-wj-LEP">
-                                        <rect key="frame" x="8" y="8" width="306" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Day:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKQ-wj-LEP">
+                                        <rect key="frame" x="8" y="8" width="366" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MSc-gb-kHf"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title or date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvi-7t-e7g">
-                                        <rect key="frame" x="8" y="41" width="366" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description (optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WcF-W8-sBW" customClass="Add">
-                                        <rect key="frame" x="8" y="83" width="366" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePT-XN-Ld2" customClass="AppUIButton" customModule="Itinerary" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="125" width="100" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="9Dl-hH-26n">
+                                        <rect key="frame" x="8" y="56" width="366" height="141"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePT-XN-Ld2" customClass="AppUIButton" customModule="Itinerary" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="252" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="63h-aj-K1e"/>
+                                            <constraint firstAttribute="height" constant="30" id="RUv-Bn-iCH"/>
+                                        </constraints>
                                         <state key="normal" title="Cancel"/>
                                         <connections>
                                             <action selector="cancel:" destination="3s3-8F-Ug3" eventType="touchUpInside" id="MX9-KD-8Bg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-Fz-sic" customClass="AppUIButton" customModule="Itinerary" customModuleProvider="target">
-                                        <rect key="frame" x="274" y="123" width="100" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-Fz-sic" customClass="AppUIButton" customModule="Itinerary" customModuleProvider="target">
+                                        <rect key="frame" x="314" y="252" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="gFk-At-Sno"/>
+                                        </constraints>
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="save:" destination="3s3-8F-Ug3" eventType="touchUpInside" id="GpG-kN-sRA"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description (optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WcF-W8-sBW">
+                                        <rect key="frame" x="8" y="205" width="366" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2bN-QH-A7u"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="done:" destination="3s3-8F-Ug3" eventType="primaryActionTriggered" id="e3A-fb-I0W"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="sI2-D0-DHn"/>
+                                    <constraint firstItem="ePT-XN-Ld2" firstAttribute="top" secondItem="WcF-W8-sBW" secondAttribute="bottom" constant="7" id="20j-wO-aSG"/>
+                                    <constraint firstAttribute="bottom" secondItem="gZ5-Fz-sic" secondAttribute="bottom" constant="8" id="A4l-a1-vFm"/>
+                                    <constraint firstAttribute="trailing" secondItem="gZ5-Fz-sic" secondAttribute="trailing" constant="8" id="GDQ-w0-uMr"/>
+                                    <constraint firstAttribute="bottom" secondItem="ePT-XN-Ld2" secondAttribute="bottom" constant="8" id="IY8-o3-4z4"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Dl-hH-26n" secondAttribute="trailing" constant="8" id="Sic-nw-cKE"/>
+                                    <constraint firstItem="WcF-W8-sBW" firstAttribute="leading" secondItem="fWb-2o-HcO" secondAttribute="leading" constant="8" id="Xus-VP-oyh"/>
+                                    <constraint firstItem="ePT-XN-Ld2" firstAttribute="leading" secondItem="fWb-2o-HcO" secondAttribute="leading" constant="8" id="Yla-St-r81"/>
+                                    <constraint firstAttribute="trailing" secondItem="vKQ-wj-LEP" secondAttribute="trailing" constant="8" id="Yzc-nS-x3j"/>
+                                    <constraint firstItem="9Dl-hH-26n" firstAttribute="leading" secondItem="fWb-2o-HcO" secondAttribute="leading" constant="8" id="eEP-Mu-gKG"/>
+                                    <constraint firstItem="vKQ-wj-LEP" firstAttribute="top" secondItem="fWb-2o-HcO" secondAttribute="top" constant="8" id="f7g-EX-CD9"/>
+                                    <constraint firstItem="9Dl-hH-26n" firstAttribute="top" secondItem="vKQ-wj-LEP" secondAttribute="bottom" constant="8" id="hB3-i6-H0J"/>
+                                    <constraint firstAttribute="trailing" secondItem="WcF-W8-sBW" secondAttribute="trailing" constant="8" id="hec-wO-coN"/>
+                                    <constraint firstItem="WcF-W8-sBW" firstAttribute="top" secondItem="9Dl-hH-26n" secondAttribute="bottom" constant="8" id="qkZ-zO-Tag"/>
+                                    <constraint firstAttribute="height" constant="290" id="sI2-D0-DHn"/>
+                                    <constraint firstItem="vKQ-wj-LEP" firstAttribute="leading" secondItem="fWb-2o-HcO" secondAttribute="leading" constant="8" id="yLr-aE-ipV"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -73,10 +95,10 @@
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="ePT-XN-Ld2" id="GgO-Us-tCZ"/>
+                        <outlet property="datePicker" destination="9Dl-hH-26n" id="QpG-RN-Lvx"/>
                         <outlet property="descriptionTextField" destination="WcF-W8-sBW" id="E08-p3-ZAL"/>
                         <outlet property="saveButton" destination="gZ5-Fz-sic" id="t5A-IS-2Qy"/>
                         <outlet property="titleLabel" destination="vKQ-wj-LEP" id="18z-kg-k9x"/>
-                        <outlet property="titleTextField" destination="rvi-7t-e7g" id="tXA-KK-BYb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xqd-JV-hhx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -41,6 +41,7 @@
 		8466A954257B1BDF00918A8C /* AppUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466A953257B1BDF00918A8C /* AppUIButton.swift */; };
 		8466A966257F32F700918A8C /* ActivitiesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8466A965257F32F700918A8C /* ActivitiesViewController.storyboard */; };
 		8466A969257F330900918A8C /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466A968257F330900918A8C /* ActivitiesViewController.swift */; };
+		846CA8152589F4A8002D9B2D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CA8142589F4A8002D9B2D /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		8466A953257B1BDF00918A8C /* AppUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIButton.swift; sourceTree = "<group>"; };
 		8466A965257F32F700918A8C /* ActivitiesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivitiesViewController.storyboard; sourceTree = "<group>"; };
 		8466A968257F330900918A8C /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		846CA8142589F4A8002D9B2D /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,12 +198,13 @@
 		8466A9302579841E00918A8C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8466A9312579843C00918A8C /* UIViewExtension.swift */,
+				846CA8142589F4A8002D9B2D /* DateExtension.swift */,
 				8466A943257AFDB200918A8C /* UIButtonExtension.swift */,
-				846505E12583237E003A4713 /* UITableViewCellExtension.swift */,
-				8456F15F25845EE1005726A2 /* PXAlertController.swift */,
-				8434EB3625885AAE003E9048 /* UIViewControllerExtention.swift */,
 				8434EB3A25885E9F003E9048 /* UITextFieldExtension.swift */,
+				846505E12583237E003A4713 /* UITableViewCellExtension.swift */,
+				8466A9312579843C00918A8C /* UIViewExtension.swift */,
+				8434EB3625885AAE003E9048 /* UIViewControllerExtention.swift */,
+				8456F15F25845EE1005726A2 /* PXAlertController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				8466A94B257B07F400918A8C /* AddTripViewController.swift in Sources */,
 				846695DD258020FF00F79274 /* MockData.swift in Sources */,
 				846695D6257FFECA00F79274 /* ActivityModel.swift in Sources */,
+				846CA8152589F4A8002D9B2D /* DateExtension.swift in Sources */,
 				846505E22583237E003A4713 /* UITableViewCellExtension.swift in Sources */,
 				8466A92625795F8C00918A8C /* TripsViewController.swift in Sources */,
 				8466A91D2579481F00918A8C /* TripFunctions.swift in Sources */,

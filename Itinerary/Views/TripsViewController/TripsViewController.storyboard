@@ -63,7 +63,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6p-Oa-mea">
-                                <rect key="frame" x="338" y="801" width="56" height="56"/>
+                                <rect key="frame" x="338" y="786" width="56" height="56"/>
                                 <state key="normal" image="FloatingActionButtonPlus"/>
                                 <connections>
                                     <segue destination="uzQ-4u-U6A" kind="presentation" identifier="toAddTripSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="EcG-rx-uPd"/>
@@ -75,7 +75,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="J15-Mo-NOf" secondAttribute="bottom" id="5jq-Ub-f9M"/>
                             <constraint firstItem="J15-Mo-NOf" firstAttribute="top" secondItem="Nm7-HM-Jiq" secondAttribute="top" id="8xh-2Q-wde"/>
-                            <constraint firstItem="G7n-0B-dso" firstAttribute="bottom" secondItem="x6p-Oa-mea" secondAttribute="bottom" constant="5" id="MO4-IH-wfr"/>
+                            <constraint firstItem="G7n-0B-dso" firstAttribute="bottom" secondItem="x6p-Oa-mea" secondAttribute="bottom" constant="20" id="MO4-IH-wfr"/>
                             <constraint firstItem="J15-Mo-NOf" firstAttribute="leading" secondItem="G7n-0B-dso" secondAttribute="leading" id="N0E-pZ-fEx"/>
                             <constraint firstItem="G7n-0B-dso" firstAttribute="trailing" secondItem="x6p-Oa-mea" secondAttribute="trailing" constant="20" id="kKp-OP-aUY"/>
                             <constraint firstItem="J15-Mo-NOf" firstAttribute="trailing" secondItem="G7n-0B-dso" secondAttribute="trailing" id="vr4-z2-Zfm"/>

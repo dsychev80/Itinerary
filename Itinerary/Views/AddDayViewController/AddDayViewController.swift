@@ -10,7 +10,7 @@ import UIKit
 class AddDayViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
@@ -24,20 +24,19 @@ class AddDayViewController: UIViewController {
         titleLabel.font = UIFont(name: Theme.mainFontName, size: 24)        
     }
 
-
     @IBAction func cancel(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func save(_ sender: UIButton) {
-        
-        guard titleTextField.hasValue, let title = titleTextField.text else {
-            return
-        }
-        let day = DayModel(title: title, subtitle: descriptionTextField.text, data: nil)
+        let day = DayModel(title: datePicker.date, subtitle: descriptionTextField.text, data: nil)
         DayFunctions.createDay(with: day, at: tripIndex)
         guard let doneSaving = doneSaving else { return }
         doneSaving(day)
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func done(_ sender: UITextField) {
+        sender.resignFirstResponder()
     }
 }

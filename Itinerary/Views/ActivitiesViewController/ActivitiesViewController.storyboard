@@ -46,9 +46,9 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag0-YE-9qe" userLabel="subtitleLabel">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag0-YE-9qe" userLabel="subtitleLabel">
                                                             <rect key="frame" x="191" y="0.0" width="183" height="33"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -134,7 +134,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdK-cv-hcK" customClass="AppUIButton" customModule="Itinerary" customModuleProvider="target">
-                                <rect key="frame" x="338" y="801" width="56" height="56"/>
+                                <rect key="frame" x="338" y="786" width="56" height="56"/>
                                 <state key="normal" image="FloatingActionButtonPlus"/>
                                 <connections>
                                     <action selector="addAction:" destination="q46-Vb-zk2" eventType="touchUpInside" id="CE4-Z3-zu3"/>
@@ -154,7 +154,7 @@
                             <constraint firstItem="Ldh-Ht-Qc5" firstAttribute="leading" secondItem="66n-6E-MUJ" secondAttribute="leading" id="Z9X-dM-sXj"/>
                             <constraint firstItem="Wft-7f-4Cb" firstAttribute="leading" secondItem="311-yj-For" secondAttribute="leading" id="dCl-rw-jgm"/>
                             <constraint firstItem="Wft-7f-4Cb" firstAttribute="top" secondItem="311-yj-For" secondAttribute="top" id="idF-FO-OZl"/>
-                            <constraint firstItem="66n-6E-MUJ" firstAttribute="bottom" secondItem="jdK-cv-hcK" secondAttribute="bottom" constant="5" id="tDW-IF-c0R"/>
+                            <constraint firstItem="66n-6E-MUJ" firstAttribute="bottom" secondItem="jdK-cv-hcK" secondAttribute="bottom" constant="20" id="tDW-IF-c0R"/>
                         </constraints>
                     </view>
                     <connections>
