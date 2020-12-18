@@ -7,10 +7,10 @@
 
 import Foundation
 
-enum ActivityType {
+enum ActivityType: Int {
     case auto
-    case flight
     case excursion
+    case flight
     case food
     case hotel
 }

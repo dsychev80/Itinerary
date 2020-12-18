@@ -39,12 +39,13 @@ class ActivitiesViewController: UIViewController {
     @IBAction func addAction(_ sender: UIButton) {
         let alertController = PXAlertController(title: "Which would you like to add?", message: nil, preferredStyle: .actionSheet)
         let addDayAction = UIAlertAction(title: "Day", style: .default, handler: handleAddDay)
-        let addActivitieAction = UIAlertAction(title: "Activity", style: .default) { (action) in
-            
-        }
+        let addActivitieAction = UIAlertAction(title: "Activity", style: .default, handler: handleAddActivity)
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
             
         }
+        
+        addActivitieAction.isEnabled = tripModel!.dayModels.count > 0
+        
         alertController.addAction(addDayAction)
         alertController.addAction(addActivitieAction)
         alertController.addAction(cancelAction)
@@ -69,6 +70,13 @@ class ActivitiesViewController: UIViewController {
             self.tableView.insertSections(IndexSet(indexArray), with: .automatic)
 //            self.updateTableViewWithTripData()
         }
+        present(vc, animated: true, completion: nil)
+    }
+    
+    func handleAddActivity(action: UIAlertAction) {
+        let vc = AddActivityViewController.getInstance() as! AddActivityViewController
+        vc.tripModel = self.tripModel
+
         present(vc, animated: true, completion: nil)
     }
     
