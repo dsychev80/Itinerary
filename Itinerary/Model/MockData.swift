@@ -14,7 +14,7 @@ class MockData {
         mockData.append(TripModel(title: "Trip to Bali!", image: UIImage(named: "somePhoto"), dayModels: createDayModelData()))
         mockData.append(TripModel(title: "Mexico", image: nil))
         mockData.append(TripModel(title: "Russian Trip"))
-        
+
         return mockData
     }
     
