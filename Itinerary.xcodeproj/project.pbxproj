@@ -13,6 +13,7 @@
 		8456F16025845EE1005726A2 /* PXAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456F15F25845EE1005726A2 /* PXAlertController.swift */; };
 		8456F16425846850005726A2 /* AddDayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8456F16325846850005726A2 /* AddDayViewController.storyboard */; };
 		8456F1672584687E005726A2 /* AddDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456F1662584687E005726A2 /* AddDayViewController.swift */; };
+		8460872E258D4DB000744307 /* ActivityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460872D258D4DB000744307 /* ActivityFunctions.swift */; };
 		846505DC2581464C003A4713 /* ActivitiesHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846505DB2581464C003A4713 /* ActivitiesHeaderViewCell.swift */; };
 		846505DF258162A2003A4713 /* ActivitieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846505DE258162A2003A4713 /* ActivitieTableViewCell.swift */; };
 		846505E22583237E003A4713 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846505E12583237E003A4713 /* UITableViewCellExtension.swift */; };
@@ -53,6 +54,7 @@
 		8456F15F25845EE1005726A2 /* PXAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXAlertController.swift; sourceTree = "<group>"; };
 		8456F16325846850005726A2 /* AddDayViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddDayViewController.storyboard; sourceTree = "<group>"; };
 		8456F1662584687E005726A2 /* AddDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDayViewController.swift; sourceTree = "<group>"; };
+		8460872D258D4DB000744307 /* ActivityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFunctions.swift; sourceTree = "<group>"; };
 		846505DB2581464C003A4713 /* ActivitiesHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesHeaderViewCell.swift; sourceTree = "<group>"; };
 		846505DE258162A2003A4713 /* ActivitieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitieTableViewCell.swift; sourceTree = "<group>"; };
 		846505E12583237E003A4713 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				846695D5257FFECA00F79274 /* ActivityModel.swift */,
 				846695D9257FFF3200F79274 /* ActivityType.swift */,
+				8460872D258D4DB000744307 /* ActivityFunctions.swift */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				8456F16025845EE1005726A2 /* PXAlertController.swift in Sources */,
 				8466A92D25796B2800918A8C /* TripTableViewCell.swift in Sources */,
 				8434EB3E2588D97D003E9048 /* DayFunctions.swift in Sources */,
+				8460872E258D4DB000744307 /* ActivityFunctions.swift in Sources */,
 				8456F1672584687E005726A2 /* AddDayViewController.swift in Sources */,
 				8434EB3725885AAE003E9048 /* UIViewControllerExtention.swift in Sources */,
 				8466A969257F330900918A8C /* ActivitiesViewController.swift in Sources */,

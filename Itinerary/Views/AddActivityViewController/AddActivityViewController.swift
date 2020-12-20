@@ -17,6 +17,7 @@ class AddActivityViewController: UIViewController {
     
     var tripIndex: Int!
     var tripModel: TripModel!
+    var doneSaving: ((Int, ActivityModel)->())?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +34,15 @@ class AddActivityViewController: UIViewController {
     }
     
     @IBAction func save(_ sender: UIButton) {
+        guard titleTextField.hasValue, let newTitle = titleTextField.text else { return }
         let activityType = getActivityType()
+        let activityModel = ActivityModel(title: newTitle, subtitle: subtitleTextField.text ?? "", activityType: activityType)
+        let dayIndex = pickerView.selectedRow(inComponent: 0)
+        ActivityFunctions.createActivity(at: tripIndex, for: dayIndex, using: activityModel)
+        if let doneSaving = doneSaving {
+            doneSaving(dayIndex, activityModel)
+        }
+        
         dismiss(animated: true, completion: nil)
     }
     
