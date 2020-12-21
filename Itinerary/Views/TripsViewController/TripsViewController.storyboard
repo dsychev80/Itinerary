@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="COg-Ke-t3y">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -15,25 +15,25 @@
             <objects>
                 <viewController id="a1s-DF-ysS" customClass="TripsViewController" customModule="Itinerary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nm7-HM-Jiq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J15-Mo-NOf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TripTableViewCell" rowHeight="160" id="tr3-Yo-Ddc" customClass="TripTableViewCell" customModule="Itinerary" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="160"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tr3-Yo-Ddc" id="4Hx-Tz-yMr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4V-UV-dla">
-                                                    <rect key="frame" x="5" y="5" width="404" height="155"/>
+                                                    <rect key="frame" x="5" y="5" width="310" height="155"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVD-jq-MiK">
-                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="155"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="310" height="155"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUT-Q1-tJN">
@@ -62,15 +62,15 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="DGk-ys-BLB">
-                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="XAt-oJ-dtj">
+                                <rect key="frame" x="40" y="164" width="240" height="240"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="GP6-oc-MbK"/>
-                                    <constraint firstAttribute="width" constant="240" id="jSc-5C-gZa"/>
+                                    <constraint firstAttribute="height" constant="240" id="50S-Mg-YcB"/>
+                                    <constraint firstAttribute="width" constant="240" id="Bo4-lP-2wG"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6p-Oa-mea">
-                                <rect key="frame" x="338" y="786" width="56" height="56"/>
+                                <rect key="frame" x="244" y="492" width="56" height="56"/>
                                 <state key="normal" image="FloatingActionButtonPlus"/>
                                 <connections>
                                     <segue destination="uzQ-4u-U6A" kind="presentation" identifier="toAddTripSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="EcG-rx-uPd"/>
@@ -82,18 +82,19 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="J15-Mo-NOf" secondAttribute="bottom" id="5jq-Ub-f9M"/>
                             <constraint firstItem="J15-Mo-NOf" firstAttribute="top" secondItem="Nm7-HM-Jiq" secondAttribute="top" id="8xh-2Q-wde"/>
-                            <constraint firstItem="DGk-ys-BLB" firstAttribute="centerX" secondItem="Nm7-HM-Jiq" secondAttribute="centerX" id="Lda-7c-SSb"/>
+                            <constraint firstItem="XAt-oJ-dtj" firstAttribute="centerY" secondItem="Nm7-HM-Jiq" secondAttribute="centerY" id="AzX-ra-J5O"/>
                             <constraint firstItem="G7n-0B-dso" firstAttribute="bottom" secondItem="x6p-Oa-mea" secondAttribute="bottom" constant="20" id="MO4-IH-wfr"/>
                             <constraint firstItem="J15-Mo-NOf" firstAttribute="leading" secondItem="G7n-0B-dso" secondAttribute="leading" id="N0E-pZ-fEx"/>
                             <constraint firstItem="G7n-0B-dso" firstAttribute="trailing" secondItem="x6p-Oa-mea" secondAttribute="trailing" constant="20" id="kKp-OP-aUY"/>
+                            <constraint firstItem="XAt-oJ-dtj" firstAttribute="centerX" secondItem="Nm7-HM-Jiq" secondAttribute="centerX" id="mRE-3W-ZI9"/>
                             <constraint firstItem="J15-Mo-NOf" firstAttribute="trailing" secondItem="G7n-0B-dso" secondAttribute="trailing" id="vr4-z2-Zfm"/>
-                            <constraint firstItem="DGk-ys-BLB" firstAttribute="centerY" secondItem="Nm7-HM-Jiq" secondAttribute="centerY" id="wh4-2T-wT5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Trips" id="txm-Ju-m5o"/>
                     <connections>
                         <outlet property="addButton" destination="x6p-Oa-mea" id="CAE-Q0-KpB"/>
                         <outlet property="helpView" destination="aWu-I0-hh7" id="vjm-a7-znn"/>
+                        <outlet property="logoView" destination="XAt-oJ-dtj" id="gcs-SD-2to"/>
                         <outlet property="tableView" destination="J15-Mo-NOf" id="iFR-DR-2yr"/>
                     </connections>
                 </viewController>
@@ -167,7 +168,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="COg-Ke-t3y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="moC-Ky-Ex8">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="Accent"/>
                         <textAttributes key="titleTextAttributes">
