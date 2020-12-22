@@ -13,13 +13,13 @@ class TripFunctions {
     }
     
     static func readTrips(completion: @escaping () -> ()) {
-        DispatchQueue.global(qos: .userInteractive).async {
+        DispatchQueue.global(qos: .userInitiated).async {
             if Data.tripModels.count == 0 {
                 Data.tripModels = MockData.createMockTripModelData()
             }
-        }
-        DispatchQueue.main.async {
-            completion()
+            DispatchQueue.main.async {
+                completion()
+            }
         }
     }
     

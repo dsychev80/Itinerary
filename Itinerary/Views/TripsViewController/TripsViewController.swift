@@ -24,17 +24,6 @@ class TripsViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
-        TripFunctions.readTrips { [unowned self] in
-            self.tableView.reloadData()
-            
-            if Data.tripModels.count > 0 {
-                if UserDefaults.standard.bool(forKey: self.seenHelpView) == false {
-                    self.view.addSubview(helpView)
-                    self.helpView.frame = self.view.frame
-                }
-            }
-        }
-        
         tableView.backgroundColor = .clear
         view.backgroundColor = Theme.backgroundColor
         
@@ -47,8 +36,9 @@ class TripsViewController: UIViewController {
             self.logoView.transform = CGAffineTransform(rotationAngle: radius).scaledBy(x: 3, y: 3)
             let yRotation = CATransform3DMakeRotation(radius, 0, radius, 0)
             self.logoView.layer.transform = CATransform3DConcat(self.logoView.layer.transform, yRotation)
-            
-        }, completion: nil)
+        }) { (success) in
+                self.getTripData()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -64,12 +54,26 @@ class TripsViewController: UIViewController {
             tripIndexToEdit = nil
         }
     }
+    
     @IBAction func closeHelpView(_ sender: AppUIButton) {
         UIView.animate(withDuration: 0.5) { [weak self] in
             self?.helpView.alpha = 0
         } completion: { [weak self] (success) in
             self?.helpView.removeFromSuperview()
             UserDefaults.standard.setValue(true, forKey: (self?.seenHelpView)!)
+        }
+    }
+    
+    fileprivate func getTripData() {
+        TripFunctions.readTrips { [weak self] in
+            guard let self = self else { return }
+            self.tableView.reloadData()
+            if Data.tripModels.count > 0 {
+                if UserDefaults.standard.bool(forKey: self.seenHelpView) == false {
+                    self.view.addSubview(self.helpView)
+                    self.helpView.frame = self.view.bounds
+                }
+            }
         }
     }
 }
