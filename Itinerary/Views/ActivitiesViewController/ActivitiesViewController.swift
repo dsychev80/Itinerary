@@ -55,7 +55,7 @@ class ActivitiesViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
-    fileprivate func getTripIndex() -> Array<TripModel>.Index? {
+    fileprivate func getTripIndex() -> Array<TripModel>.Index! {
         return Data.tripModels.firstIndex(where: { (tripModel) -> Bool in
             tripModel.id == self.tripID
         })
@@ -151,5 +151,28 @@ extension ActivitiesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return self.headerHeight
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let activity = tripModel?.dayModels[indexPath.section].activityModels[indexPath.row]
+        
+        let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, view, actionPerformed: @escaping (Bool) -> Void) in
+            let alert = UIAlertController(title: "Delete Activity", message: "Are you sure you want to delete this activity: \(activity!.title)", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (alertAction) in
+                actionPerformed(false)
+            }))
+            alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (alertAction) in
+                ActivityFunctions.deleteActivity(at: self.getTripIndex(), for: indexPath.section, using: activity!)
+                self.tripModel?.dayModels[indexPath.section].activityModels.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+                actionPerformed(true)
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+        delete.image = #imageLiteral(resourceName: "delete")
+        
+        return UISwipeActionsConfiguration(actions: [delete])
     }
 }

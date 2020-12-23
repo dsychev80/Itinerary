@@ -110,6 +110,7 @@ class AddTripViewController: UIViewController {
             case .limited:
                 break
             @unknown default:
+                print("It looks like Apple added new enum values to PHAuthorizationStatus")
                 break
             }
         }
