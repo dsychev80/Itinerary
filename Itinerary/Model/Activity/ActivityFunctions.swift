@@ -18,4 +18,30 @@ class ActivityFunctions {
             dayModel.activityModels.remove(at: index)
         }
     }
+    
+    static func updateActivity(at tripIndex: Int, with oldDayIndex: Int, and newDayIndex: Int, using activity: ActivityModel) {
+        
+        if oldDayIndex != newDayIndex {
+            // Move activity to different Day
+            let lastIndex = Data.tripModels[tripIndex].dayModels[newDayIndex].activityModels.count
+           reoderActivity(at: tripIndex, oldDayIndex: oldDayIndex, newDayIndex: newDayIndex, newActivityIndex: lastIndex, using: activity)
+        } else {
+            // Update activity in same Day
+            let dayModel = Data.tripModels[tripIndex].dayModels[oldDayIndex]
+            let activityIndex = (dayModel.activityModels.firstIndex(of: activity))!
+            Data.tripModels[tripIndex].dayModels[newDayIndex].activityModels[activityIndex] = activity
+        }
+    }
+    
+    static func reoderActivity(at tripIndex: Int, oldDayIndex: Int, newDayIndex: Int, newActivityIndex: Int, using activity: ActivityModel) {
+        
+        // 1. Remove activity from old location
+        let oldDayModel = Data.tripModels[tripIndex].dayModels[oldDayIndex]
+        if let oldActivityIndex = oldDayModel.activityModels.firstIndex(of: activity) {
+            Data.tripModels[tripIndex].dayModels[oldDayIndex].activityModels.remove(at: oldActivityIndex)
+        }
+        
+        // 2. Insert activity into new location
+        Data.tripModels[tripIndex].dayModels[newDayIndex].activityModels.insert(activity, at: newActivityIndex)
+    }
 }
