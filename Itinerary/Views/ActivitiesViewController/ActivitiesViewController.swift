@@ -61,6 +61,12 @@ class ActivitiesViewController: UIViewController {
         })
     }
     
+    @IBAction func toggleEditMode(_ sender: UIBarButtonItem) {
+//        tableView.isEditing = !tableView.isEditing
+        tableView.isEditing.toggle()
+        sender.title = sender.title == "Edit" ? "Done" : "Edit"
+    }
+    
     func handleAddDay(action: UIAlertAction) {
         let vc = AddDayViewController.getInstance() as! AddDayViewController
         vc.tripIndex = getTripIndex()
@@ -228,5 +234,21 @@ extension ActivitiesViewController: UITableViewDelegate {
         edit.backgroundColor = .systemBlue
         
         return UISwipeActionsConfiguration(actions: [edit])
+    }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        
+        // 1. Get the current Activity
+        let activityModel = (tripModel?.dayModels[sourceIndexPath.section].activityModels[sourceIndexPath.row])!
+        // 2. Delete activity from old location
+        tripModel?.dayModels[sourceIndexPath.section].activityModels.remove(at: sourceIndexPath.row)
+        // 3. Insert activity into the new location
+        tripModel?.dayModels[destinationIndexPath.section].activityModels.insert(activityModel, at: destinationIndexPath.row)
+        // 4. Update the data store
+        ActivityFunctions.reoderActivity(at: getTripIndex(), oldDayIndex: sourceIndexPath.section, newDayIndex: destinationIndexPath.section, newActivityIndex: destinationIndexPath.row, using: activityModel)
     }
 }

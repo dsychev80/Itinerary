@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Activities View Controller-->
+        <!--Title-->
         <scene sceneID="LUI-da-E4z">
             <objects>
                 <viewController id="q46-Vb-zk2" customClass="ActivitiesViewController" customModule="Itinerary" customModuleProvider="target" sceneMemberID="viewController">
@@ -157,6 +157,13 @@
                             <constraint firstItem="66n-6E-MUJ" firstAttribute="bottom" secondItem="jdK-cv-hcK" secondAttribute="bottom" constant="20" id="tDW-IF-c0R"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="KAY-Iu-TaR">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="TaK-QP-T3b">
+                            <connections>
+                                <action selector="toggleEditMode:" destination="q46-Vb-zk2" id="GdP-My-xjV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addButton" destination="jdK-cv-hcK" id="OKj-kH-rjD"/>
                         <outlet property="backgroundImageView" destination="Wft-7f-4Cb" id="uXZ-Qx-k2j"/>
