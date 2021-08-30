@@ -241,9 +241,8 @@ extension ActivitiesViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        
         // 1. Get the current Activity
-        let activityModel = (tripModel?.dayModels[sourceIndexPath.section].activityModels[sourceIndexPath.row])!
+        let activityModel = ( tripModel?.dayModels[sourceIndexPath.section].activityModels[sourceIndexPath.row])!
         // 2. Delete activity from old location
         tripModel?.dayModels[sourceIndexPath.section].activityModels.remove(at: sourceIndexPath.row)
         // 3. Insert activity into the new location

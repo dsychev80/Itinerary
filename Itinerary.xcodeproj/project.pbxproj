@@ -45,6 +45,7 @@
 		846CA8152589F4A8002D9B2D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CA8142589F4A8002D9B2D /* DateExtension.swift */; };
 		846CA81A258B3F1B002D9B2D /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CA819258B3F1B002D9B2D /* AddActivityViewController.swift */; };
 		846CA81E258B3F33002D9B2D /* AddActivityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846CA81D258B3F33002D9B2D /* AddActivityViewController.storyboard */; };
+		846D2DA426DC140A002A07C0 /* screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 846D2DA326DC1409002A07C0 /* screen2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,9 @@
 		846CA8142589F4A8002D9B2D /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		846CA819258B3F1B002D9B2D /* AddActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
 		846CA81D258B3F33002D9B2D /* AddActivityViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddActivityViewController.storyboard; sourceTree = "<group>"; };
+		846D2D9F26DC0C82002A07C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		846D2DA226DC13B0002A07C0 /* screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = screen1.png; path = ../../../../../../var/folders/m5/9stps2q94ll08w41461g2t5m0000gn/T/screen1.png; sourceTree = "<group>"; };
+		846D2DA326DC1409002A07C0 /* screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = screen2.png; path = ../../../../../../var/folders/m5/9stps2q94ll08w41461g2t5m0000gn/T/screen2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 		8466A8F425783C6200918A8C = {
 			isa = PBXGroup;
 			children = (
+				846D2D9F26DC0C82002A07C0 /* README.md */,
+				846D2DA126DC1380002A07C0 /* images */,
 				8466A8FF25783C6200918A8C /* Itinerary */,
 				8466A8FE25783C6200918A8C /* Products */,
 			);
@@ -267,6 +273,15 @@
 			path = AddActivityViewController;
 			sourceTree = "<group>";
 		};
+		846D2DA126DC1380002A07C0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				846D2DA226DC13B0002A07C0 /* screen1.png */,
+				846D2DA326DC1409002A07C0 /* screen2.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -327,6 +342,7 @@
 				8466A947257B076A00918A8C /* AddTripViewController.storyboard in Resources */,
 				8466A9412579EBE500918A8C /* Colors.xcassets in Resources */,
 				8466A90D25783C6600918A8C /* LaunchScreen.storyboard in Resources */,
+				846D2DA426DC140A002A07C0 /* screen2.png in Resources */,
 				8466A966257F32F700918A8C /* ActivitiesViewController.storyboard in Resources */,
 				8456F16425846850005726A2 /* AddDayViewController.storyboard in Resources */,
 				846CA81E258B3F33002D9B2D /* AddActivityViewController.storyboard in Resources */,
