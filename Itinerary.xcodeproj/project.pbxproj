@@ -10,6 +10,18 @@
 		8434EB3725885AAE003E9048 /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434EB3625885AAE003E9048 /* UIViewControllerExtention.swift */; };
 		8434EB3B25885E9F003E9048 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434EB3A25885E9F003E9048 /* UITextFieldExtension.swift */; };
 		8434EB3E2588D97D003E9048 /* DayFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434EB3D2588D97D003E9048 /* DayFunctions.swift */; };
+		8454E1EA26FCB22100D5FF8F /* mainScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8454E1E926FCB22100D5FF8F /* mainScreen.png */; };
+		8454E1ED26FCB24A00D5FF8F /* helpScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8454E1EC26FCB24A00D5FF8F /* helpScreen.png */; };
+		8454E1F026FCB27400D5FF8F /* mainScreenEditing.png in Resources */ = {isa = PBXBuildFile; fileRef = 8454E1EF26FCB27400D5FF8F /* mainScreenEditing.png */; };
+		8454E1F326FCB2F200D5FF8F /* mainScreenEditing2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8454E1F226FCB2F200D5FF8F /* mainScreenEditing2.png */; };
+		8454E1F626FCB33C00D5FF8F /* mainScreenAddingNewNote.png in Resources */ = {isa = PBXBuildFile; fileRef = 8454E1F526FCB33C00D5FF8F /* mainScreenAddingNewNote.png */; };
+		8454E1F926FCB37500D5FF8F /* activitiesScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8454E1F826FCB37500D5FF8F /* activitiesScreen.png */; };
+		8454E1FE26FCB47200D5FF8F /* activitiesScreenAddingNewActivitie.png in Resources */ = {isa = PBXBuildFile; fileRef = 8454E1FB26FCB47200D5FF8F /* activitiesScreenAddingNewActivitie.png */; };
+		8454E1FF26FCB47200D5FF8F /* activitiesScreenAddingNewDay.png in Resources */ = {isa = PBXBuildFile; fileRef = 8454E1FC26FCB47200D5FF8F /* activitiesScreenAddingNewDay.png */; };
+		8454E20026FCB47200D5FF8F /* activitiesScreenAddingNewDayOrActivitie.png in Resources */ = {isa = PBXBuildFile; fileRef = 8454E1FD26FCB47200D5FF8F /* activitiesScreenAddingNewDayOrActivitie.png */; };
+		8454E20326FCB52400D5FF8F /* activitiesScreenAdditingDeletingOrRearranging.png in Resources */ = {isa = PBXBuildFile; fileRef = 8454E20226FCB52400D5FF8F /* activitiesScreenAdditingDeletingOrRearranging.png */; };
+		8454E20626FCB58E00D5FF8F /* activitiesScreenDeleting.png in Resources */ = {isa = PBXBuildFile; fileRef = 8454E20526FCB58E00D5FF8F /* activitiesScreenDeleting.png */; };
+		8454E20926FCB5A000D5FF8F /* activitiesScreenEditing.png in Resources */ = {isa = PBXBuildFile; fileRef = 8454E20826FCB5A000D5FF8F /* activitiesScreenEditing.png */; };
 		8456F16025845EE1005726A2 /* PXAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456F15F25845EE1005726A2 /* PXAlertController.swift */; };
 		8456F16425846850005726A2 /* AddDayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8456F16325846850005726A2 /* AddDayViewController.storyboard */; };
 		8456F1672584687E005726A2 /* AddDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456F1662584687E005726A2 /* AddDayViewController.swift */; };
@@ -51,6 +63,18 @@
 		8434EB3625885AAE003E9048 /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
 		8434EB3A25885E9F003E9048 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		8434EB3D2588D97D003E9048 /* DayFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFunctions.swift; sourceTree = "<group>"; };
+		8454E1E926FCB22100D5FF8F /* mainScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainScreen.png; sourceTree = "<group>"; };
+		8454E1EC26FCB24A00D5FF8F /* helpScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpScreen.png; sourceTree = "<group>"; };
+		8454E1EF26FCB27400D5FF8F /* mainScreenEditing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainScreenEditing.png; sourceTree = "<group>"; };
+		8454E1F226FCB2F200D5FF8F /* mainScreenEditing2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainScreenEditing2.png; sourceTree = "<group>"; };
+		8454E1F526FCB33C00D5FF8F /* mainScreenAddingNewNote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainScreenAddingNewNote.png; sourceTree = "<group>"; };
+		8454E1F826FCB37500D5FF8F /* activitiesScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activitiesScreen.png; sourceTree = "<group>"; };
+		8454E1FB26FCB47200D5FF8F /* activitiesScreenAddingNewActivitie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activitiesScreenAddingNewActivitie.png; sourceTree = "<group>"; };
+		8454E1FC26FCB47200D5FF8F /* activitiesScreenAddingNewDay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activitiesScreenAddingNewDay.png; sourceTree = "<group>"; };
+		8454E1FD26FCB47200D5FF8F /* activitiesScreenAddingNewDayOrActivitie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activitiesScreenAddingNewDayOrActivitie.png; sourceTree = "<group>"; };
+		8454E20226FCB52400D5FF8F /* activitiesScreenAdditingDeletingOrRearranging.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activitiesScreenAdditingDeletingOrRearranging.png; sourceTree = "<group>"; };
+		8454E20526FCB58E00D5FF8F /* activitiesScreenDeleting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activitiesScreenDeleting.png; sourceTree = "<group>"; };
+		8454E20826FCB5A000D5FF8F /* activitiesScreenEditing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activitiesScreenEditing.png; sourceTree = "<group>"; };
 		8456F15F25845EE1005726A2 /* PXAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXAlertController.swift; sourceTree = "<group>"; };
 		8456F16325846850005726A2 /* AddDayViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddDayViewController.storyboard; sourceTree = "<group>"; };
 		8456F1662584687E005726A2 /* AddDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDayViewController.swift; sourceTree = "<group>"; };
@@ -273,9 +297,21 @@
 		846D2DA126DC1380002A07C0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8454E1E926FCB22100D5FF8F /* mainScreen.png */,
+				8454E1EC26FCB24A00D5FF8F /* helpScreen.png */,
+				8454E20526FCB58E00D5FF8F /* activitiesScreenDeleting.png */,
+				8454E1EF26FCB27400D5FF8F /* mainScreenEditing.png */,
+				8454E20826FCB5A000D5FF8F /* activitiesScreenEditing.png */,
+				8454E1F226FCB2F200D5FF8F /* mainScreenEditing2.png */,
+				8454E1F526FCB33C00D5FF8F /* mainScreenAddingNewNote.png */,
+				8454E1F826FCB37500D5FF8F /* activitiesScreen.png */,
+				8454E1FB26FCB47200D5FF8F /* activitiesScreenAddingNewActivitie.png */,
+				8454E1FC26FCB47200D5FF8F /* activitiesScreenAddingNewDay.png */,
+				8454E1FD26FCB47200D5FF8F /* activitiesScreenAddingNewDayOrActivitie.png */,
+				8454E20226FCB52400D5FF8F /* activitiesScreenAdditingDeletingOrRearranging.png */,
 			);
 			path = images;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -334,15 +370,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8454E1F326FCB2F200D5FF8F /* mainScreenEditing2.png in Resources */,
+				8454E1FE26FCB47200D5FF8F /* activitiesScreenAddingNewActivitie.png in Resources */,
 				8466A947257B076A00918A8C /* AddTripViewController.storyboard in Resources */,
 				8466A9412579EBE500918A8C /* Colors.xcassets in Resources */,
 				8466A90D25783C6600918A8C /* LaunchScreen.storyboard in Resources */,
 				8466A966257F32F700918A8C /* ActivitiesViewController.storyboard in Resources */,
+				8454E20326FCB52400D5FF8F /* activitiesScreenAdditingDeletingOrRearranging.png in Resources */,
 				8456F16425846850005726A2 /* AddDayViewController.storyboard in Resources */,
+				8454E20626FCB58E00D5FF8F /* activitiesScreenDeleting.png in Resources */,
 				846CA81E258B3F33002D9B2D /* AddActivityViewController.storyboard in Resources */,
+				8454E1F026FCB27400D5FF8F /* mainScreenEditing.png in Resources */,
 				8466A92925795FB000918A8C /* TripsViewController.storyboard in Resources */,
+				8454E20926FCB5A000D5FF8F /* activitiesScreenEditing.png in Resources */,
+				8454E1F926FCB37500D5FF8F /* activitiesScreen.png in Resources */,
+				8454E1F626FCB33C00D5FF8F /* mainScreenAddingNewNote.png in Resources */,
+				8454E1ED26FCB24A00D5FF8F /* helpScreen.png in Resources */,
 				8466A93E2579EA1C00918A8C /* FugazOne-Regular.ttf in Resources */,
+				8454E1EA26FCB22100D5FF8F /* mainScreen.png in Resources */,
+				8454E1FF26FCB47200D5FF8F /* activitiesScreenAddingNewDay.png in Resources */,
 				8466A90A25783C6600918A8C /* Assets.xcassets in Resources */,
+				8454E20026FCB47200D5FF8F /* activitiesScreenAddingNewDayOrActivitie.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

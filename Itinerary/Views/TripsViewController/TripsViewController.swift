@@ -60,6 +60,7 @@ class TripsViewController: UIViewController {
             self?.helpView.alpha = 0
         } completion: { [weak self] (success) in
             self?.helpView.removeFromSuperview()
+            self?.navigationController?.setNavigationBarHidden(false, animated: true)
             UserDefaults.standard.setValue(true, forKey: (self?.seenHelpView)!)
         }
     }
@@ -70,6 +71,7 @@ class TripsViewController: UIViewController {
             self.tableView.reloadData()
             if Data.tripModels.count > 0 {
                 if UserDefaults.standard.bool(forKey: self.seenHelpView) == false {
+                    self.navigationController?.setNavigationBarHidden(true, animated: false)
                     self.view.addSubview(self.helpView)
                     self.helpView.frame = self.view.bounds
                 }
